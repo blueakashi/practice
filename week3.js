@@ -13,3 +13,9 @@ const studentName = "David"
 const schoolName = "Mather"
 
 console.log("My name is " + studentName + ". My student ID is " + studentId + ". My school name is " + schoolName + ".")
+
+function circleArea(radius) {
+return radius * radius * 3.14
+}
+
+console.log(circleArea(3))

@@ -45,3 +45,4 @@ function greaterThan100(number) {
     console.log(checkGrade(83))
     console.log(checkGrade(90))
     console.log(checkGrade(60))
+console.log("hello")

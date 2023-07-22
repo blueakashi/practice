@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main id="main">
+      <section>
+        <input type="text" id="nameInput" placeholder="Type your name here" />
+        <button onclick="displayName()">Submit</button>
+        <p id="displayText"></p>
+      </section>
+
+      <!-- Create an input element here for creating a new password and a button for submit -->
+      <input type="text" id="passwordInput" placeholder="Create your password here" />
+      <!-- Create a button here for creating password  -->
+      <button onclick="displayName()">Create</button>
+      <!-- Create an empty paragraph here to show a message later -->
+      <p id="displayText"></p>
+      <!-- Create a log in input box -->
+
+      <!-- Crete a log in button -->
+
+      <!-- Create a log in text -->
+
+      <!-- New section with list and array -->
+      <section id="color">
+        <ul>
+          <li>blue</li>
+          <li>green</li>
+          <li>red</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+  <script>
+    function displayName() {
+      // Get the value from the input box
+      const name = document.getElementById("nameInput").value;
+      // Display the name in the paragraph
+      document.getElementById("displayText").innerHTML = "Your name is " + name;
+    }
+
+    function appendGreeting() {
+      const displayText = document.getElementById("displayText");
+      const br = document.createElement("br");
+      displayText.append(br, "Welcome to the class!");
+    }
+
+    let password;
+    // Create a function beblow to checks for if the password is longer than 8 chacacters
+function password() {
+  const userCreatedPassword = document.getElementById("passwordInput".value)
+
+  if (userCreatedPassword.length < 8) {
+    document.getElementById("passwordText").innerHTML = 
+    "Password is shorter than 8 characters";
+  } else {
+    document.getElementById("passwordText").innerHTML = "Password is good!";
+    Password = userCreatedPassword;
+  }
+}
+    // If longer than 8 characters, display success on the screen, and store the password in a variable
+    // If not than display a message that says password is not longer than 8 characters, do not store the password
+
+    // Login
+    // If the the password entered is correct show a message that says login
+    // If not show a message that says not login
+
+    // New section
+    // Create an array of cool programming concepts you learned
+    // Loop through the list and console.log() all the concpets
+
+    // Make the programming concepts show up as a list on the page
+  </script>
+</html>
